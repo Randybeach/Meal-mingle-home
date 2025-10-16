@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Mingle - AI Recipe Parser API</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: #2c3e50; color: white; padding: 1rem 0; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { color: white; text-decoration: none; }
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 4rem 0; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+        .btn { background: #e74c3c; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; display: inline-block; }
+        .features { padding: 4rem 0; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .feature { background: #f8f9fa; padding: 2rem; border-radius: 8px; text-align: center; }
+        .feature h3 { color: #2c3e50; margin-bottom: 1rem; }
+        .api-demo { background: #ecf0f1; padding: 4rem 0; }
+        .code-block { background: #2c3e50; color: #ecf0f1; padding: 1.5rem; border-radius: 8px; overflow-x: auto; margin: 1rem 0; }
+        footer { background: #2c3e50; color: white; text-align: center; padding: 2rem 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">🍽️ Meal Mingle</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#api">API</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>AI-Powered Recipe Parser</h1>
+            <p>Extract recipes from URLs, social media posts, text, and images with our intelligent API</p>
+            <a href="#api" class="btn">View API Documentation</a>
+        </div>
+    </section>
+
+    <section id="services" class="features">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Our Services</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>🌐 Website Recipe Parsing</h3>
+                    <p>Extract structured recipe data from 1000+ recipe websites automatically</p>
+                </div>
+                <div class="feature">
+                    <h3>📱 Social Media Integration</h3>
+                    <p>Parse recipes from Instagram, TikTok, and Facebook posts with AI</p>
+                </div>
+                <div class="feature">
+                    <h3>🖼️ Image OCR</h3>
+                    <p>Extract recipes from photos using advanced AI vision technology</p>
+                </div>
+                <div class="feature">
+                    <h3>📝 Text Processing</h3>
+                    <p>Convert unstructured recipe text into clean, structured JSON format</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="api" class="api-demo">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">API Example</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Live API Base URL: <strong>https://meal-mingle-parser-production.up.railway.app</strong></p>
+            
+            <div class="code-block">
+<pre>curl -X POST https://meal-mingle-parser-production.up.railway.app/parse \
+  -H "Content-Type: application/json" \
+  -d '{"url": "https://allrecipes.com/recipe/123"}'</pre>
+            </div>
+
+            <h3>Response Format:</h3>
+            <div class="code-block">
+<pre>{
+  "title": "Recipe Name",
+  "ingredients": [
+    {"section": "Ingredients", "ingredients": ["1 cup flour", "2 eggs"]}
+  ],
+  "instructions": ["Mix ingredients", "Bake at 350°F"],
+  "prep_time": 15,
+  "cook_time": 30,
+  "servings": 4,
+  "image_url": "https://example.com/image.jpg"
+}</pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="padding: 4rem 0;">
+        <div class="container" style="text-align: center;">
+            <h2>Contact Us</h2>
+            <p style="margin: 1rem 0;">Ready to integrate recipe parsing into your application?</p>
+            <p><strong>Email:</strong> support@meal-mingle.app</p>
+            <p><strong>API Support:</strong> Available 24/7</p>
+            <p><strong>Founded:</strong> 2024</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meal Mingle. All rights reserved. | AI Recipe Parsing Solutions</p>
+        </div>
+    </footer>
+</body>
+</html>
