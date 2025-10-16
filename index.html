@@ -33,7 +33,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#api">API</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -41,60 +41,51 @@
 
     <section id="home" class="hero">
         <div class="container">
-            <h1>AI-Powered Recipe Parser</h1>
-            <p>Extract recipes from URLs, social media posts, text, and images with our intelligent API</p>
-            <a href="#api" class="btn">View API Documentation</a>
+            <h1>Meal Mingle</h1>
+            <p>Smart recipe management with social features and intelligent recipe importing</p>
+            <a href="#features" class="btn">Discover Features</a>
         </div>
     </section>
 
-    <section id="services" class="features">
+    <section id="features" class="features">
         <div class="container">
-            <h2 style="text-align: center; margin-bottom: 2rem;">Our Services</h2>
+            <h2 style="text-align: center; margin-bottom: 2rem;">App Features</h2>
             <div class="features-grid">
                 <div class="feature">
-                    <h3>🌐 Website Recipe Parsing</h3>
-                    <p>Extract structured recipe data from 1000+ recipe websites automatically</p>
+                    <h3>📱 Smart Recipe Import</h3>
+                    <p>Import recipes from Instagram, TikTok, Facebook, and any recipe website with AI</p>
                 </div>
                 <div class="feature">
-                    <h3>📱 Social Media Integration</h3>
-                    <p>Parse recipes from Instagram, TikTok, and Facebook posts with AI</p>
+                    <h3>👥 Social Cookbooks</h3>
+                    <p>Create shared cookbooks and collaborate with friends and family</p>
                 </div>
                 <div class="feature">
-                    <h3>🖼️ Image OCR</h3>
-                    <p>Extract recipes from photos using advanced AI vision technology</p>
+                    <h3>📅 Meal Planning</h3>
+                    <p>Plan your meals with an integrated calendar and grocery list features</p>
                 </div>
                 <div class="feature">
-                    <h3>📝 Text Processing</h3>
-                    <p>Convert unstructured recipe text into clean, structured JSON format</p>
+                    <h3>🔧 Recipe Tools</h3>
+                    <p>Scale ingredients, convert measurements, and use cook mode for step-by-step guidance</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="api" class="api-demo">
+    <section id="about" class="api-demo">
         <div class="container">
-            <h2 style="text-align: center; margin-bottom: 2rem;">API Example</h2>
-            <p style="text-align: center; margin-bottom: 2rem;">Live API Base URL: <strong>https://meal-mingle-parser-production.up.railway.app</strong></p>
+            <h2 style="text-align: center; margin-bottom: 2rem;">About Meal Mingle</h2>
+            <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem;">The smart way to organize, share, and discover recipes</p>
             
-            <div class="code-block">
-<pre>curl -X POST https://meal-mingle-parser-production.up.railway.app/parse \
-  -H "Content-Type: application/json" \
-  -d '{"url": "https://allrecipes.com/recipe/123"}'</pre>
-            </div>
-
-            <h3>Response Format:</h3>
-            <div class="code-block">
-<pre>{
-  "title": "Recipe Name",
-  "ingredients": [
-    {"section": "Ingredients", "ingredients": ["1 cup flour", "2 eggs"]}
-  ],
-  "instructions": ["Mix ingredients", "Bake at 350°F"],
-  "prep_time": 15,
-  "cook_time": 30,
-  "servings": 4,
-  "image_url": "https://example.com/image.jpg"
-}</pre>
+            <div style="background: white; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
+                <h3 style="color: #2c3e50; margin-bottom: 1rem;">🚀 Key Capabilities</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin: 0.5rem 0;">✅ Import from social media (Instagram, TikTok, Facebook)</li>
+                    <li style="margin: 0.5rem 0;">✅ Parse any recipe website automatically</li>
+                    <li style="margin: 0.5rem 0;">✅ Convert text recipes to structured format</li>
+                    <li style="margin: 0.5rem 0;">✅ Collaborative cookbook sharing</li>
+                    <li style="margin: 0.5rem 0;">✅ Meal planning and organization</li>
+                    <li style="margin: 0.5rem 0;">✅ Cross-platform mobile app</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -102,16 +93,16 @@
     <section id="contact" style="padding: 4rem 0;">
         <div class="container" style="text-align: center;">
             <h2>Contact Us</h2>
-            <p style="margin: 1rem 0;">Ready to integrate recipe parsing into your application?</p>
+            <p style="margin: 1rem 0;">Questions about Meal Mingle or need support?</p>
             <p><strong>Email:</strong> support@meal-mingle.app</p>
-            <p><strong>API Support:</strong> Available 24/7</p>
+            <p><strong>App Support:</strong> Available via email</p>
             <p><strong>Founded:</strong> 2024</p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Meal Mingle. All rights reserved. | AI Recipe Parsing Solutions</p>
+            <p>&copy; 2024 Meal Mingle. All rights reserved. | Smart Recipe Management App</p>
         </div>
     </footer>
 </body>
